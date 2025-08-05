@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HP Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    header h1 {
+      font-size: 24px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .nav-buttons a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      padding: 8px 12px;
+      background-color: #0078d4;
+      border-radius: 4px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #005ea6;
+      transform: scale(1.05);
+    }
+
+    /* Main content */
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    .Hp-image {
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .Hp-image:hover {
+      transform: scale(1.03);
+    }
+
+    .info {
+      margin-top: 30px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .info h2 {
+      color: #0078d4;
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .whatsup-section {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+.whatsup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsup-link {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.whatsup-link:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+.fab.fa-whatsapp {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem;
+}
+/* Responsive adjustments for WhatsApp button */
+@media (max-width: 768px) {
+    .whatsup-link {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    .fab.fa-whatsapp {
+        font-size: 1.2rem;
+    }
+}
+
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px) }
+      to { opacity: 1; transform: translateY(0) }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>HP Services</h1>
+    <div class="nav-buttons">
+      <a href="../index.html">Home</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <img class="HP-image" src="../brand-images/hp.jpg" alt="HP Laptop">
+
+    <div class="info">
+      <h2>About HP</h2>
+      <p>
+        HP is a leading global technology company known for its innovative laptops, desktops, and components. With a commitment to quality and performance, HP products are designed to meet the needs of gamers, professionals, and everyday users alike. Their laptops are particularly renowned for their sleek designs, powerful hardware, and cutting-edge features.
+        HP laptops are equipped with the latest processors, high-resolution displays, and advanced cooling systems, making them ideal for gaming, content creation, and productivity tasks. The brand also offers a wide range of accessories and peripherals to enhance the user experience.
+        Whether you're looking for a high-performance gaming laptop or a reliable work machine, HP has a solution for you.
+        HP's dedication to innovation and customer satisfaction has made it a trusted name in the tech industry.
+      </p>
+
+      <h2>Our HP Services</h2>
+      <p>
+        ✅ Laptop Repair and Service<br>
+        ✅ Screen and Keyboard Replacement<br>
+        ✅ Battery and Charger Issues<br>
+        ✅ Motherboard Repairs<br>
+        ✅ Windows Installation and Updates<br>
+        ✅ Dell Driver Support & Optimization<br>
+        ✅ On-site Diagnosis & Pickup/Delivery Available
+      </p>
+    </div>
+  </div>
+   <section class="whatsup-section">
+    <div class="whatsup-container">
+        <a href="https://wa.me/+916281086912" target="_blank" title="HI,i need laptop services" class="whatsup-link">
+            <i class="fab fa-whatsapp"></i>
+            <span></span>
+        </a>
+    </div>  
+</section>
+
+</body>
+</html>
